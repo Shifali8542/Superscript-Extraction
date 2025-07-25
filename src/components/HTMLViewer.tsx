@@ -62,19 +62,19 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
     // Highlight <sup> tags with a very light, semi-transparent background
     highlightedContent = highlightedContent.replace(
       /<sup([^>]*)>/gi,
-      '<sup$1 style="background-color: rgba(255, 255, 0, 0.15); border: 2px solid rgba(255, 165, 0, 0.6); border-radius: 4px; padding: 2px 4px; margin: 0 2px; box-shadow: 0 0 4px rgba(255, 165, 0, 0.3);">'
+      '<sup$1 style="background-color: rgba(255, 0, 0, 0.3); border: 2px solid rgba(255, 0, 0, 0.8); border-radius: 6px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); font-weight: bold;">'
     );
 
     // Highlight elements with superscript class
     highlightedContent = highlightedContent.replace(
       /class="([^"]*\s)?superscript(\s[^"]*)?"([^>]*>)/gi,
-      'class="$1superscript$2" style="background-color: rgba(255, 255, 0, 0.15); border: 2px solid rgba(255, 165, 0, 0.6); border-radius: 4px; padding: 2px 4px; margin: 0 2px; box-shadow: 0 0 4px rgba(255, 165, 0, 0.3);"$3'
+      'class="$1superscript$2" style="background-color: rgba(255, 0, 0, 0.3); border: 2px solid rgba(255, 0, 0, 0.8); border-radius: 6px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); font-weight: bold;"$3'
     );
 
     // Highlight inline superscript styles
     highlightedContent = highlightedContent.replace(
       /style="([^"]*vertical-align:\s*super[^"]*)"([^>]*>)/gi,
-      'style="$1; background-color: rgba(255, 255, 0, 0.15); border: 2px solid rgba(255, 165, 0, 0.6); border-radius: 4px; padding: 2px 4px; margin: 0 2px; box-shadow: 0 0 4px rgba(255, 165, 0, 0.3);"$2'
+      'style="$1; background-color: rgba(255, 0, 0, 0.3); border: 2px solid rgba(255, 0, 0, 0.8); border-radius: 6px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); font-weight: bold;"$2'
     );
 
     return highlightedContent;
@@ -118,6 +118,10 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
         max-width: 0 !important;
         overflow: hidden !important;
       }
+        /* Increase font size for table content */
+table, td, th {
+  font-size: 24px !important;
+}
       
       /* Override any wrapper or container divs */
       div[style*="width"], div[style*="max-width"], div[style*="margin"] {
@@ -280,7 +284,7 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
               padding: '40px',
               margin: '0',
               lineHeight: '1.7',
-              fontSize: '20px',
+              fontSize: '25px',
               fontFamily: 'Georgia, serif',
               backgroundColor: 'white',
               color: 'black',
