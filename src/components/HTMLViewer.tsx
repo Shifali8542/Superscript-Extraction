@@ -74,7 +74,7 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
     // Highlight inline superscript styles
     highlightedContent = highlightedContent.replace(
       /style="([^"]*vertical-align:\s*super[^"]*)"([^>]*>)/gi,
-      'style="$1; background-color: rgba(255, 0, 0, 0.3); border: 2px solid rgba(255, 0, 0, 0.8); border-radius: 6px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); font-weight: bold;"$2'
+      'style="$1; background-color: rgba(255, 0, 0, 0.3); border: 2px solid rgba(255, 0, 0, 0.8); border-radius: 6px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); font-weight: bold;2'
     );
 
     return highlightedContent;
@@ -119,9 +119,9 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
         overflow: hidden !important;
       }
         /* Increase font size for table content */
-table, td, th {
-  font-size: 24px !important;
-}
+      table, td, th {
+      font-size: 20px !important;
+      }
       
       /* Override any wrapper or container divs */
       div[style*="width"], div[style*="max-width"], div[style*="margin"] {
@@ -239,8 +239,8 @@ table, td, th {
 
           {superscripts.length > 0 && (
             <div className="flex items-center space-x-2 text-green-400">
-              <Search className="w-4 h-4" />
-              <span className="text-sm">Highlighted</span>
+              {/* <Search className="w-4 h-4" /> */}
+              {/* <span className="text-sm">Highlighted</span> */}
             </div>
           )}
         </div>

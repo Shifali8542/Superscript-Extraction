@@ -8,7 +8,7 @@ import { Split, Link, Unlink, FileText, Eye } from 'lucide-react';
 function App() {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [superscriptCount, setSuperscriptCount] = useState<number>(0);
-  const [totalPages] = useState<number>(50); // This should be dynamically determined
+  const [totalPages] = useState<number>(50);
 
   const {
     pdfScrollTop,
@@ -38,11 +38,11 @@ function App() {
               <FileText className="w-8 h-8 text-blue-400" />
               <h1 className="text-2xl font-bold text-white">PDF vs HTML Validator</h1>
             </div>
-            <div className="h-6 w-px bg-gray-600"></div>
-            <div className="flex items-center space-x-2 text-gray-300">
+            {/* <div className="h-6 w-px bg-gray-600"></div> */}
+            {/* <div className="flex items-center space-x-2 text-gray-300">
               <Eye className="w-4 h-4" />
               <span className="text-sm">Superscript Analysis</span>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex items-center space-x-4">

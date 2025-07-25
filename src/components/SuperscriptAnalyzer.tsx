@@ -52,9 +52,9 @@ const SuperscriptAnalyzer: React.FC<SuperscriptAnalyzerProps> = ({
           
           {superscriptCount > 0 && (
             <div className="bg-yellow-500/20 px-3 py-1 rounded-full">
-              <span className="text-yellow-300 text-sm">
+              {/* <span className="text-yellow-300 text-sm">
                 Validation Required
-              </span>
+              </span> */}
             </div>
           )}
         </div>
