@@ -27,7 +27,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
 }) => {
   const [numPages, setNumPages] = useState<number>(0);
   const [pageNumber, setPageNumber] = useState<number>(currentPage);
-  const [scale, setScale] = useState<number>(1.2);
+  const [scale, setScale] = useState<number>(2.5);
   const [rotation, setRotation] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(true);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -77,7 +77,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
       isUserScrolling.current = true;
       const { scrollTop, scrollHeight } = containerRef.current;
       onScroll(scrollTop, scrollHeight);
-      
+
       // Reset user scrolling flag after a delay
       setTimeout(() => {
         isUserScrolling.current = false;
@@ -101,7 +101,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
           >
             <ChevronLeft className="w-4 h-4 text-white" />
           </button>
-          
+
           <div className="flex items-center space-x-2">
             <input
               type="number"
@@ -113,7 +113,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
             />
             <span className="text-gray-300">/ {numPages}</span>
           </div>
-          
+
           <button
             onClick={goToNextPage}
             disabled={pageNumber >= numPages}
@@ -130,18 +130,18 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
           >
             <ZoomOut className="w-4 h-4 text-white" />
           </button>
-          
+
           <span className="text-gray-300 min-w-[3rem] text-center">
             {Math.round(scale * 100)}%
           </span>
-          
+
           <button
             onClick={zoomIn}
             className="p-2 rounded bg-gray-700 hover:bg-gray-600 transition-colors"
           >
             <ZoomIn className="w-4 h-4 text-white" />
           </button>
-          
+
           <button
             onClick={rotate}
             className="p-2 rounded bg-gray-700 hover:bg-gray-600 transition-colors"
@@ -152,7 +152,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
       </div>
 
       {/* PDF Container */}
-      <div 
+      <div
         ref={containerRef}
         className="flex-1 overflow-auto bg-gray-800 p-4"
         onScroll={handleScroll}
@@ -163,7 +163,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
             <span className="ml-3 text-gray-300">Loading PDF...</span>
           </div>
         )}
-        
+
         <div className="flex justify-center">
           <Document
             file={pdfFile}
@@ -176,8 +176,8 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
               scale={scale}
               rotate={rotation}
               className="border border-gray-600 bg-white"
-              // renderTextLayer={true}
-              // renderAnnotationLayer={true}
+            // renderTextLayer={true}
+            // renderAnnotationLayer={true}
             />
           </Document>
         </div>

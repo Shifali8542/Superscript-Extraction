@@ -29,6 +29,7 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
   const contentRef = useRef<HTMLDivElement>(null);
   const isUserScrolling = useRef<boolean>(false);
 
+  // Scroll Sync Listener
   useEffect(() => {
     if (syncScrollTop !== undefined && !isUserScrolling.current && containerRef.current) {
       containerRef.current.scrollTop = syncScrollTop;
@@ -58,82 +59,88 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
   const highlightSuperscripts = useCallback((content: string): string => {
     let highlightedContent = content;
 
-    // Highlight <sup> tags
+    // Highlight <sup> tags with a very light, semi-transparent background
     highlightedContent = highlightedContent.replace(
       /<sup([^>]*)>/gi,
-      '<sup$1 style="background-color: #fef08a; border: 2px solid #eab308; border-radius: 3px; padding: 1px 2px; margin: 0 1px;">'
+      '<sup$1 style="background-color: rgba(255, 255, 0, 0.15); border: 2px solid rgba(255, 165, 0, 0.6); border-radius: 4px; padding: 2px 4px; margin: 0 2px; box-shadow: 0 0 4px rgba(255, 165, 0, 0.3);">'
     );
 
     // Highlight elements with superscript class
     highlightedContent = highlightedContent.replace(
       /class="([^"]*\s)?superscript(\s[^"]*)?"([^>]*>)/gi,
-      'class="$1superscript$2" style="background-color: #fef08a; border: 2px solid #eab308; border-radius: 3px; padding: 1px 2px; margin: 0 1px;"$3'
+      'class="$1superscript$2" style="background-color: rgba(255, 255, 0, 0.15); border: 2px solid rgba(255, 165, 0, 0.6); border-radius: 4px; padding: 2px 4px; margin: 0 2px; box-shadow: 0 0 4px rgba(255, 165, 0, 0.3);"$3'
     );
 
     // Highlight inline superscript styles
     highlightedContent = highlightedContent.replace(
       /style="([^"]*vertical-align:\s*super[^"]*)"([^>]*>)/gi,
-      'style="$1; background-color: #fef08a; border: 2px solid #eab308; border-radius: 3px; padding: 1px 2px; margin: 0 1px;"$2'
+      'style="$1; background-color: rgba(255, 255, 0, 0.15); border: 2px solid rgba(255, 165, 0, 0.6); border-radius: 4px; padding: 2px 4px; margin: 0 2px; box-shadow: 0 0 4px rgba(255, 165, 0, 0.3);"$2'
     );
 
     return highlightedContent;
   }, []);
 
   // Function to inject CSS to override any existing styles
+
   const injectOverrideCSS = useCallback((content: string): string => {
     const overrideCSS = `
-      <style>
-        /* Override any centering styles in the HTML */
-        body, html, * {
-          margin: 0 !important;
-          padding: 0 !important;
-          box-sizing: border-box !important;
-        }
-        
-        /* Force full width for all elements */
-        body, html, div, table, p, span {
-          width: 100% !important;
-          max-width: none !important;
-          text-align: left !important;
-          margin-left: 0 !important;
-          margin-right: 0 !important;
-        }
-        
-        /* Override any center alignment */
-        .center, .centered, [align="center"], [style*="text-align: center"], [style*="margin: auto"], [style*="margin:auto"] {
-          text-align: left !important;
-          margin-left: 0 !important;
-          margin-right: 0 !important;
-          width: 100% !important;
-        }
-        
-        /* Force tables to be full width */
-        table {
-          width: 100% !important;
-          margin: 0 !important;
-          table-layout: auto !important;
-        }
-        
-        /* Override any wrapper or container divs */
-        div[style*="width"], div[style*="max-width"], div[style*="margin"] {
-          width: 100% !important;
-          max-width: none !important;
-          margin: 0 !important;
-        }
-        
-        /* Ensure content takes full space */
-        .content, .main, .wrapper, .container {
-          width: 100% !important;
-          max-width: none !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-      </style>
-    `;
-    
+    <style>
+      /* Override any centering styles in the HTML */
+      body, html, * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+      }
+      
+      /* Force full width for all elements and prevent overflow */
+      body, html, div, table, p, span {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+      }
+      
+      /* Fix table overflow issues */
+      table {
+        width: 100% !important;
+        margin: 0 !important;
+        table-layout: fixed !important;
+        border-collapse: collapse !important;
+      }
+      
+      /* Ensure table cells don't overflow */
+      td, th {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        max-width: 0 !important;
+        overflow: hidden !important;
+      }
+      
+      /* Override any wrapper or container divs */
+      div[style*="width"], div[style*="max-width"], div[style*="margin"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+      }
+      
+      /* Ensure content takes full space without overflow */
+      .content, .main, .wrapper, .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+      }
+    </style>
+  `;
+
     return overrideCSS + content;
   }, []);
 
+  // Load HTML on Page Change
   useEffect(() => {
     const loadHTML = async () => {
       setLoading(true);
@@ -148,10 +155,10 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
         }
 
         let content = await response.text();
-        
+
         // Inject override CSS first
         content = injectOverrideCSS(content);
-        
+
         const detectedSuperscripts = detectSuperscripts(content);
         const highlightedContent = highlightSuperscripts(content);
 
@@ -192,7 +199,7 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
     }
   }, [onScroll]);
 
-  // Apply additional CSS overrides after content is loaded
+  // Apply additional CSS overrides after content is loaded(unwanted styles (like margins or centered text) are removed after rendering.)
   useEffect(() => {
     if (contentRef.current && htmlContent) {
       const allElements = contentRef.current.querySelectorAll('*');
@@ -219,9 +226,9 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
         </div>
 
         <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-2 bg-yellow-500/20 px-3 py-1 rounded-full">
-            <HighlighterIcon className="w-4 h-4 text-yellow-400" />
-            <span className="text-yellow-300 font-medium">
+          <div className="flex items-center space-x-2 bg-orange-500/20 px-3 py-1 rounded-full">
+            <HighlighterIcon className="w-4 h-4 text-orange-400" />
+            <span className="text-orange-300 font-medium">
               {highlightedCount} superscript{highlightedCount !== 1 ? 's' : ''}
             </span>
           </div>
@@ -270,15 +277,19 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
               width: '100%',
               height: '100%',
               minHeight: '100%',
-              padding: '24px',
+              padding: '40px',
               margin: '0',
-              lineHeight: '1.6',
-              fontSize: '14px',
+              lineHeight: '1.7',
+              fontSize: '20px',
               fontFamily: 'Georgia, serif',
               backgroundColor: 'white',
               color: 'black',
               textAlign: 'left',
               boxSizing: 'border-box',
+              overflowX: 'hidden',
+              maxWidth: '100%',
+              wordWrap: 'break-word',
+              overflowWrap: 'break-word',
             }}
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />

@@ -30,13 +30,13 @@ function App() {
   return (
     <div className="h-screen flex flex-col bg-gray-900">
       {/* Header */}
-      <header className="bg-gray-800 border-b border-gray-700 p-6">
+      <header className="bg-gray-800 border-b border-gray-700 p-8">
 
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="flex items-center space-x-2">
-              <FileText className="w-6 h-6 text-blue-400" />
-              <h1 className="text-xl font-bold text-white">PDF vs HTML Validator</h1>
+              <FileText className="w-8 h-8 text-blue-400" />
+              <h1 className="text-2xl font-bold text-white">PDF vs HTML Validator</h1>
             </div>
             <div className="h-6 w-px bg-gray-600"></div>
             <div className="flex items-center space-x-2 text-gray-300">
