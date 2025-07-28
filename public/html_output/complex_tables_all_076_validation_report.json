@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "$",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "$ (4)"
+    },
+    {
+      "base_text": "In September 2016, Abbott announced that it entere...",
+      "superscripts": [
+        "18"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "In September 2016, Abbott announced that it entered into a definitive agreement to sell Abbott Medic..."
+    }
+  ]
+}

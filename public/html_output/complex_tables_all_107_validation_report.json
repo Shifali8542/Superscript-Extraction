@@ -1,0 +1,39 @@
+{
+  "total_patterns_found": 4,
+  "valid_superscripts": 0,
+  "potential_errors": 4,
+  "details": [
+    {
+      "base_text": "Benefit ratio (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Benefit ratio (a)"
+    },
+    {
+      "base_text": "Interest-adjusted benefit ratio (b)",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Interest-adjusted benefit ratio (b)"
+    },
+    {
+      "base_text": "(a) We calculate benefit ratios by dividing the re...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) We calculate benefit ratios by dividing the related product's insurance policy benefits by insur..."
+    },
+    {
+      "base_text": "(b) We calculate the interest-adjusted benefit rat...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) We calculate the interest-adjusted benefit ratio (a non-GAAP measure) for Washington National's ..."
+    }
+  ]
+}

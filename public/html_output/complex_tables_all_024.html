@@ -1,228 +1,235 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document Content</title>
+    <title>JSON to HTML Conversion</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; margin-bottom: 20px; }
-        th, td { border: 1px solid #cccccc; text-align: left; padding: 8px; font-size: 12px; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-        th { background-color: #3366CC; color: white; font-weight: bold; }
-        h2 { color: #4F81BD; border-bottom: 2px solid #4F81BD; padding-bottom: 5px;}
-        p { margin-block-start: 0.5em; margin-block-end: 0.5em; }
+        body { font-family: Arial, sans-serif; line-height: 1.4; font-size: 10pt; color: #333; }
+        .page { border: 1px solid #ddd; padding: 1.5rem; margin: 1rem auto; max-width: 8.5in; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1.2em; font-size: 8.6pt; }
+        th, td { border: 1px solid #ccc; text-align: left; padding: 6px; vertical-align: top; }
+        th { font-weight: bold; background-color: #f7f7f7; }
+        h2 { color: #4f81bd; font-size: 11pt; font-weight: bold; margin-top: 1.5em; margin-bottom: 0.5em; }
+        p, li { font-size: 9pt; margin-top: 0; margin-bottom: 1em; }
+        ul { list-style: none; padding-left: 0; margin-left: 20px; }
+        li { padding-left: 1.2em; text-indent: -1.2em; margin-bottom: 0.5em; }
+        li::before { content: "· "; padding-right: 5px; }
+        .footnote { font-size: 8pt; font-style: italic; margin-bottom: 0.5em; }
+        sup { vertical-align: super; font-size: smaller; }
     </style>
 </head>
 <body>
-    <p style="font-size: small; color: grey;"><i>z_CVC Europe V_2017Q4 PTF_033.pdf</i></p>
-<h2>CURRENT STRATEGY</h2>
-<p>Our current strategy remains unchanged from the original investment rationale.</p>
-<h2>CURRENT PERFORMANCE</h2>
-
+    <div class="page" style="width: 8.26in; height: 11.68in;">
+<p class="page-header">z_CVC Europe V_2017Q4 PTF_033.pdf</p>
+<h2 class="">CURRENT STRATEGY</h2>
+<p class="">Our current strategy remains unchanged from the original investment rationale.</p>
+<h2 class="">CURRENT PERFORMANCE</h2>
 <table>
-	<tr>
-		<th rowspan="2">(US$mm)</th>
-		<th colspan="6">Fiscal Year Ended January <sup>(1)</sup></th>
-		<th colspan="2">8 mo ended Sep</th>
-		<th>LTM</th>
-	</tr>
-	<tr>
-		<th>FY2012</th>
-		<th>FY2013</th>
-		<th>FY2014</th>
-		<th>FY2015</th>
-		<th>FY2016</th>
-		<th>FY2017</th>
-		<th>FY2017</th>
-		<th>FY2018</th>
-		<th>FY2018</th>
-	</tr>
-	<tr>
-		<td>Total stores <sup>(2)</sup></td>
-		<td>195</td>
-		<td>198</td>
-		<td>201</td>
-		<td>207</td>
-		<td>213</td>
-		<td>214</td>
-		<td>214</td>
-		<td>215</td>
-		<td>215</td>
-	</tr>
-	<tr>
-		<td>Merchandise Sales</td>
-		<td>10,509</td>
-		<td>10,855</td>
-		<td>10,935</td>
-		<td>11,111</td>
-		<td>11,279</td>
-		<td>11,229</td>
-		<td>10,460</td>
-		<td>10,466</td>
-		<td>11,235</td>
-	</tr>
-	<tr>
-		<td>% Growth</td>
-		<td>7.6%</td>
-		<td>3.3%</td>
-		<td>0.7%</td>
-		<td>1.6%</td>
-		<td>1.5%</td>
-		<td>(0.4%)</td>
-		<td></td>
-		<td>0.1%</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>% SSS growth</td>
-		<td>4.0%</td>
-		<td>1.2%</td>
-		<td>(1.0%)</td>
-		<td>(0.3%)</td>
-		<td>(0.5%)</td>
-		<td>(2.2%)</td>
-		<td></td>
-		<td>(1.2%)</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Adj. EBITDA (3)</td>
-		<td>383</td>
-		<td>410</td>
-		<td>411</td>
-		<td>410</td>
-		<td>411</td>
-		<td>478</td>
-		<td>457</td>
-		<td>490</td>
-		<td>511</td>
-	</tr>
-	<tr>
-		<td>% Margin</td>
-		<td>3.6%</td>
-		<td>3.8%</td>
-		<td>3.8%</td>
-		<td>3.7%</td>
-		<td>3.6%</td>
-		<td>4.3%</td>
-		<td>4.4%</td>
-		<td>4.7%</td>
-		<td>4.6%</td>
-	</tr>
-	<tr>
-		<td>Adj. EBITA <sup>(3)</sup></td>
-		<td>247</td>
-		<td>261</td>
-		<td>254</td>
-		<td>258</td>
-		<td>265</td>
-		<td>329</td>
-		<td>319</td>
-		<td>364</td>
-		<td>374</td>
-	</tr>
-	<tr>
-		<td>% Margin</td>
-		<td>2.4%</td>
-		<td>2.4%</td>
-		<td>2.3%</td>
-		<td>2.3%</td>
-		<td>2.4%</td>
-		<td>2.9%</td>
-		<td>3.0%</td>
-		<td>3.5%</td>
-		<td>3.3%</td>
-	</tr>
-	<tr>
-		<td>Capital Expenditures</td>
-		<td>(165)</td>
-		<td>(157)</td>
-		<td>(142)</td>
-		<td>(155)</td>
-		<td>(112)</td>
-		<td>(115)</td>
-		<td>(108)</td>
-		<td>(109)</td>
-		<td>(115)</td>
-	</tr>
-	<tr>
-		<td>% of Sales</td>
-		<td>1.6%</td>
-		<td>1.4%</td>
-		<td>1.3%</td>
-		<td>1.4%</td>
-		<td>1.0%</td>
-		<td>1.0%</td>
-		<td>1.0%</td>
-		<td>1.0%</td>
-		<td>1.0%</td>
-	</tr>
-	<tr>
-		<td>Total Debt</td>
-		<td>1,670</td>
-		<td>2,104</td>
-		<td>2,489</td>
-		<td>2,354</td>
-		<td>2,281</td>
-		<td>2,094</td>
-		<td>2,089</td>
-		<td>2,717</td>
-		<td>2,717</td>
-	</tr>
-	<tr>
-		<td>Cash &amp; Cash Equivalents</td>
-		<td>(40)</td>
-		<td>(49)</td>
-		<td>(39)</td>
-		<td>(37)</td>
-		<td>(37)</td>
-		<td>(32)</td>
-		<td>(116)</td>
-		<td>(44)</td>
-		<td>(44)</td>
-	</tr>
-	<tr>
-		<td>Net Debt</td>
-		<td>1,630</td>
-		<td>2,054</td>
-		<td>2,450</td>
-		<td>2,318</td>
-		<td>2,244</td>
-		<td>2,062</td>
-		<td>1,973</td>
-		<td>2,673</td>
-		<td>2,673</td>
-	</tr>
-	<tr>
-		<td>Net Debt / Adj. EBITDA <sup>(4)</sup></td>
-		<td>4.3x</td>
-		<td>5.0x</td>
-		<td>6.0x</td>
-		<td>5.6x</td>
-		<td>5.5x</td>
-		<td>4.5x</td>
-		<td></td>
-		<td></td>
-		<td>5.2x</td>
-	</tr>
+  <tr>
+    <th rowspan="2">(US$mm)</th>
+    <th colspan="6">Fiscal Year Ended January <sup>(1)</sup></th>
+    <th colspan="2">8 mo ended Sep</th>
+    <th>LTM</th>
+  </tr>
+  <tr>
+    <th>FY2012</th>
+    <th>FY2013</th>
+    <th>FY2014</th>
+    <th>FY2015</th>
+    <th>FY2016</th>
+    <th>FY2017</th>
+    <th>FY2017</th>
+    <th>FY2018</th>
+    <th>FY2018</th>
+  </tr>
+  <tr>
+    <td>Total stores <sup>(2)</sup></td>
+    <td>195</td>
+    <td>198</td>
+    <td>201</td>
+    <td>207</td>
+    <td>213</td>
+    <td>214</td>
+    <td>214</td>
+    <td>215</td>
+    <td>215</td>
+  </tr>
+  <tr>
+    <td>Merchandise Sales</td>
+    <td>10,509</td>
+    <td>10,855</td>
+    <td>10,935</td>
+    <td>11,111</td>
+    <td>11,279</td>
+    <td>11,229</td>
+    <td>10,460</td>
+    <td>10,466</td>
+    <td>11,235</td>
+  </tr>
+  <tr>
+    <td>% Growth</td>
+    <td>7.6%</td>
+    <td>3.3%</td>
+    <td>0.7%</td>
+    <td>1.6%</td>
+    <td>1.5%</td>
+    <td>(0.4%)</td>
+    <td></td>
+    <td>0.1%</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>% SSS growth</td>
+    <td>4.0%</td>
+    <td>1.2%</td>
+    <td>(1.0%)</td>
+    <td>(0.3%)</td>
+    <td>(0.5%)</td>
+    <td>(2.2%)</td>
+    <td></td>
+    <td>(1.2%)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Adj. EBITDA <sup>(3)</sup></td>
+    <td>383</td>
+    <td>410</td>
+    <td>411</td>
+    <td>410</td>
+    <td>411</td>
+    <td>478</td>
+    <td>457</td>
+    <td>490</td>
+    <td>511</td>
+  </tr>
+  <tr>
+    <td>% Margin</td>
+    <td>3.6%</td>
+    <td>3.8%</td>
+    <td>3.8%</td>
+    <td>3.7%</td>
+    <td>3.6%</td>
+    <td>4.3%</td>
+    <td>4.4%</td>
+    <td>4.7%</td>
+    <td>4.6%</td>
+  </tr>
+  <tr>
+    <td>Adj. EBITA <sup>(3)</sup></td>
+    <td>247</td>
+    <td>261</td>
+    <td>254</td>
+    <td>258</td>
+    <td>265</td>
+    <td>329</td>
+    <td>319</td>
+    <td>364</td>
+    <td>374</td>
+  </tr>
+  <tr>
+    <td>% Margin</td>
+    <td>2.4%</td>
+    <td>2.4%</td>
+    <td>2.3%</td>
+    <td>2.3%</td>
+    <td>2.4%</td>
+    <td>2.9%</td>
+    <td>3.0%</td>
+    <td>3.5%</td>
+    <td>3.3%</td>
+  </tr>
+  <tr>
+    <td>Capital Expenditures</td>
+    <td>(165)</td>
+    <td>(157)</td>
+    <td>(142)</td>
+    <td>(155)</td>
+    <td>(112)</td>
+    <td>(115)</td>
+    <td>(108)</td>
+    <td>(109)</td>
+    <td>(115)</td>
+  </tr>
+  <tr>
+    <td>% of Sales</td>
+    <td>1.6%</td>
+    <td>1.4%</td>
+    <td>1.3%</td>
+    <td>1.4%</td>
+    <td>1.0%</td>
+    <td>1.0%</td>
+    <td>1.0%</td>
+    <td>1.0%</td>
+    <td>1.0%</td>
+  </tr>
+  <tr>
+    <td>Total Debt</td>
+    <td>1,670</td>
+    <td>2,104</td>
+    <td>2,489</td>
+    <td>2,354</td>
+    <td>2,281</td>
+    <td>2,094</td>
+    <td>2,089</td>
+    <td>2,717</td>
+    <td>2,717</td>
+  </tr>
+  <tr>
+    <td>Cash & Cash Equivalents</td>
+    <td>(40)</td>
+    <td>(49)</td>
+    <td>(39)</td>
+    <td>(37)</td>
+    <td>(37)</td>
+    <td>(32)</td>
+    <td>(116)</td>
+    <td>(44)</td>
+    <td>(44)</td>
+  </tr>
+  <tr>
+    <td>Net Debt</td>
+    <td>1,630</td>
+    <td>2,054</td>
+    <td>2,450</td>
+    <td>2,318</td>
+    <td>2,244</td>
+    <td>2,062</td>
+    <td>1,973</td>
+    <td>2,673</td>
+    <td>2,673</td>
+  </tr>
+  <tr>
+    <td>Net Debt / Adj. EBITDA <sup>(4)</sup></td>
+    <td>4.3x</td>
+    <td>5.0x</td>
+    <td>6.0x</td>
+    <td>5.6x</td>
+    <td>5.5x</td>
+    <td>4.5x</td>
+    <td></td>
+    <td></td>
+    <td>5.2x</td>
+  </tr>
 </table>
-<p>(1) For purposes of comparability, results for the FYE Jan. 2013 have been adjusted to exclude the impact of a 53rd reporting week.</p>
-<p>(2) Excludes five stores closed as part of the Company&#x27;s restructuring program in 2011.</p>
-<p>(3) Adjusted EBITDA and Adjusted EBITA in all periods are calculated pro forma for the incremental rent expense from the sale- leaseback transactions completed at closing and in September 2012 (~$60 million in total). Additionally, EBITDA and EBITA for the fiscal years ended January 2014 and 2015 have been adjusted to reflect the estimated allocation of an $8 million inventory write- down taken in October 2015.</p>
-<p>(4) FYE January 2012 net debt / EBITDA multiple is based upon EBITDA prior to the adjustment for the incremental rent associated with the sale-leaseback transactions completed in September 2012.</p>
-<h2>REVIEW OF CURRENT PERFORMANCE</h2>
-<p>For the eleven months ended December 2017, BJ&#x27;s generated total merchandise sales of $10.5 billion, a slight decrease of -0.2% year-over-year. Same-store sales declined by 1.2%, impacted by unseasonably cold and wet weather at the beginning of the year (which impacted store traffic in the Company&#x27;s summer seasonable business) as well as some softness in perishables and general merchandise. Aside from December, which was negatively affected by inclement weather during the Christmas shopping period, comps in the second half of FY18 have thus far been positive (in line with management&#x27;s projections), and we expect continued strong performance through fiscal year-end.</p>
-<p>In the YTD period, BJ&#x27;s generated Adj. EBITDA of $490 million, an increase of 7.8% relative to prior year. EBITDA has benefited from better gas sales margins and cost control efforts across utilities, coupon income, and advertising expenses. LTM adjusted EBITDA totaled $511 million.</p>
-<h2>ESG</h2>
-<p>BJ&#x27;s Wholesale Club conducts itself in a manner that is consistent with its values of Team, Community Respect and Integrity. The company takes an active role in reducing hunger and improving education in its communities. The company also works to reduce its environmental impact and to source products responsibly. Some of BJ&#x27;s Wholesale&#x27;s recent accomplishments in these areas include:</p>
-<p>· Donating unsold meat, produce, dairy and bakery items to local food banks</p>
-<p>· Awarding dozens of grants to local food banks to improve their ability to store and distribute food</p>
-<p>. Becoming the first wholesale club committed to selling &quot;No Dirty Gold,&quot; meaning that metals in its jewelry selection are responsibly sourced</p>
-<p>. Removing products from its shelves that contain chemicals, called neonicotinoids, that harm the honey bee population · Restoring and establishing forest lands by planting hundreds of thousands of trees along the East Coast of the United States.</p>
-<p>· Helping to ensuring animal welfare through a commitment to source 100% cage-free eggs by 2022.</p>
-<p style="font-size: small; color: grey;"><i>27</i></p>
-<p>CVC Capital Partners</p>
+<p class="">(1) For purposes of comparability, results for the FYE Jan. 2013 have been adjusted to exclude the impact of a 53rd reporting week.</p>
+<p class="">(2) Excludes five stores closed as part of the Company's restructuring program in 2011.</p>
+<p class="">(3) Adjusted EBITDA and Adjusted EBITA in all periods are calculated pro forma for the incremental rent expense from the sale- leaseback transactions completed at closing and in September 2012 (~$60 million in total). Additionally, EBITDA and EBITA for the fiscal years ended January 2014 and 2015 have been adjusted to reflect the estimated allocation of an $8 million inventory write- down taken in October 2015.</p>
+<p class="">(4) FYE January 2012 net debt / EBITDA multiple is based upon EBITDA prior to the adjustment for the incremental rent associated with the sale-leaseback transactions completed in September 2012.</p>
+<h2 class="">REVIEW OF CURRENT PERFORMANCE</h2>
+<p class="">For the eleven months ended December 2017, BJ's generated a total merchandise sales of $10.5 billion, a slight decrease of -0.2% year-over-year. Same-store sales declined by 1.2%, impacted by unseasonably cold and wet weather at the beginning of the year (which impacted store traffic in the Company's summer seasonable business) as well as some softness in perishables and general merchandise. Aside from December, which was negatively affected by inclement weather during the Christmas shopping period, comps in the second half of FY18 have thus far been positive (in line with management's projections), and we expect continued strong performance through fiscal year-end.</p>
+<p class="">In the YTD period, BJ's generated Adj. EBITDA of $490 million, an increase of 7.8% relative to prior year. EBITDA has benefited from better gas sales margins and cost control efforts across utilities, coupon income, and advertising expenses. LTM adjusted EBITDA totaled $511 million.</p>
+<h2 class="">ESG</h2>
+<p class="">BJ's Wholesale a Club conducts itself in a manner that is consistent with its values of Team, Community Respect and Integrity. The company takes an active role in reducing hunger and improving education in its communities. The company also works to reduce its environmental impact and to source products responsibly. Some of BJ's Wholesale's recent accomplishments in these areas include:</p>
+<ul>
+  <li>Donating unsold meat, produce, dairy and bakery items to local food banks</li>
+  <li>Awarding dozens of grants to local food banks to improve their ability to store and distribute food</li>
+  <li>Becoming the first wholesale club committed to selling "No Dirty Gold," meaning that metals in its jewelry selection are responsibly sourced</li>
+  <li>Removing products from its shelves that contain chemicals, called neonicotinoids, that harm the honey bee population · Restoring and establishing forest lands by planting hundreds of thousands of trees along the East Coast of the United States</li>
+  <li>Helping to ensuring animal welfare through a commitment to source 100% cage-free eggs by 2022</li>
+</ul>
+<p class="page-number">27</p>
+<p class="">CVC Capital Partners</p>
+</div>
 
 </body>
 </html>

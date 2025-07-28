@@ -1,0 +1,55 @@
+{
+  "total_patterns_found": 6,
+  "valid_superscripts": 0,
+  "potential_errors": 6,
+  "details": [
+    {
+      "base_text": "- Protective provisions such as (i) the unilateral...",
+      "superscripts": [
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "- Protective provisions such as (i) the unilateral right to force a recap to at least the original t..."
+    },
+    {
+      "base_text": "· Whilst the PC market is flat / slightly declinin...",
+      "superscripts": [
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "· Whilst the PC market is flat / slightly declining, Avast has levers to drive further market share ..."
+    },
+    {
+      "base_text": "EBITDA and EBIT adjusted for stock based compensat...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) EBITDA and EBIT adjusted for stock based compensation and non-recurring expenses (incl. integrat..."
+    },
+    {
+      "base_text": "As of Q3 2017, Adj. EBITDA includes $25m of synerg...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) As of Q3 2017, Adj. EBITDA includes $25m of synergies realised; annual run-rate effect of these ..."
+    },
+    {
+      "base_text": "Up until the end of 2016, Avast billings and reven...",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(3) Up until the end of 2016, Avast billings and revenues were recognised \"net\" of sales transaction..."
+    },
+    {
+      "base_text": "Pro forma for the Piriform acquisition (July 2017)...",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(4) Pro forma for the Piriform acquisition (July 2017) and preferred dividend payment (October 2017)..."
+    }
+  ]
+}

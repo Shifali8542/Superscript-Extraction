@@ -1,0 +1,111 @@
+{
+  "total_patterns_found": 13,
+  "valid_superscripts": 0,
+  "potential_errors": 13,
+  "details": [
+    {
+      "base_text": "",
+      "superscripts": [
+        "915"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(915)"
+    },
+    {
+      "base_text": "Disposed and Restructured Businesses <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Disposed and Restructured Businesses <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Investment Management Revenue <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Investment Management Revenue <sup>(2)</sup>"
+    },
+    {
+      "base_text": "Other Revenue, net <sup></sup>",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other Revenue, net <sup>(3)</sup>"
+    },
+    {
+      "base_text": "Other Expenses <sup></sup>",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other Expenses <sup>(4)</sup>"
+    },
+    {
+      "base_text": "Operating Income (Loss) <sup></sup>",
+      "superscripts": [
+        "5"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Operating Income (Loss) <sup>(5)</sup>"
+    },
+    {
+      "base_text": "Income from Equity Method Investments <sup></sup>",
+      "superscripts": [
+        "6"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Income from Equity Method Investments <sup>(6)</sup>"
+    },
+    {
+      "base_text": "Includes the Institutional Trust and Independent F...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Includes the Institutional Trust and Independent Fiduciary business of ETC, Management Fees from..."
+    },
+    {
+      "base_text": "Includes client related expenses of $0.2 million, ...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) Includes client related expenses of $0.2 million, $0.9 million and $0.07 million for the years e..."
+    },
+    {
+      "base_text": "Includes interest expense on the Notes Payable and...",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(3) Includes interest expense on the Notes Payable and the line of credit of $0.7 million and $3.6 m..."
+    },
+    {
+      "base_text": "Includes an impairment charge related to the impai...",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(4) Includes an impairment charge related to the impairment of goodwill in the Institutional Asset M..."
+    },
+    {
+      "base_text": "Includes Noncontrolling Interest of $3.2 million, ...",
+      "superscripts": [
+        "5"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(5) Includes Noncontrolling Interest of $3.2 million, $2.9 million and $4.0 million for the years en..."
+    },
+    {
+      "base_text": "Equity in G5 - Wealth Management (through December...",
+      "superscripts": [
+        "6"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(6) Equity in G5 - Wealth Management (through December 31, 2017, the date we exchanged all of our ou..."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "total_patterns_found": 6,
+  "valid_superscripts": 0,
+  "potential_errors": 6,
+  "details": [
+    {
+      "base_text": "Basic Earnings Per Common Share (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Basic Earnings Per Common Share (a)"
+    },
+    {
+      "base_text": "Diluted Earnings Per Common Share (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Diluted Earnings Per Common Share (a)"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "828"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(828)"
+    },
+    {
+      "base_text": "Basic Earnings (Loss) Per Common Share (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Basic Earnings (Loss) Per Common Share (a)"
+    },
+    {
+      "base_text": "Diluted Earnings (Loss) Per Common Share (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Diluted Earnings (Loss) Per Common Share (a)"
+    },
+    {
+      "base_text": "(a) The sum of the four quarters of earnings per s...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) The sum of the four quarters of earnings per share for 2017 and 2016 may not add to the full yea..."
+    }
+  ]
+}

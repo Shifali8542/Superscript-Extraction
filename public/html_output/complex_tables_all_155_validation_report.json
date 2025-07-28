@@ -1,0 +1,87 @@
+{
+  "total_patterns_found": 10,
+  "valid_superscripts": 0,
+  "potential_errors": 10,
+  "details": [
+    {
+      "base_text": "Financial Advisory (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Financial Advisory (a)"
+    },
+    {
+      "base_text": "Asset Management (b)",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Asset Management (b)"
+    },
+    {
+      "base_text": "Corporate (c)",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Corporate (c)"
+    },
+    {
+      "base_text": "Compensation and Benefits (d)",
+      "superscripts": [
+        "d"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Compensation and Benefits (d)"
+    },
+    {
+      "base_text": "Other Operating Expenses (e)",
+      "superscripts": [
+        "e"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other Operating Expenses (e)"
+    },
+    {
+      "base_text": "Total Debt (f)",
+      "superscripts": [
+        "f"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Total Debt (f)"
+    },
+    {
+      "base_text": "(a) Financial Advisory net revenue consists of the...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) Financial Advisory net revenue consists of the following:"
+    },
+    {
+      "base_text": "(b) Asset Management net revenue consists of the f...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) Asset Management net revenue consists of the following:"
+    },
+    {
+      "base_text": "(c) \"Corporate\" includes interest expense (net of ...",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(c) \"Corporate\" includes interest expense (net of interest income) and investment income (losses) fr..."
+    },
+    {
+      "base_text": "(d) Includes in 2013, charges of $51,399 relating ...",
+      "superscripts": [
+        "d"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(d) Includes in 2013, charges of $51,399 relating to the acceleration of unrecognized amortization e..."
+    }
+  ]
+}

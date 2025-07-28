@@ -1,0 +1,31 @@
+{
+  "total_patterns_found": 3,
+  "valid_superscripts": 0,
+  "potential_errors": 3,
+  "details": [
+    {
+      "base_text": "Total operating expenses <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Total operating expenses <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Includes:",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1)Includes:"
+    },
+    {
+      "base_text": "%",
+      "superscripts": [
+        "12"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(12)%"
+    }
+  ]
+}

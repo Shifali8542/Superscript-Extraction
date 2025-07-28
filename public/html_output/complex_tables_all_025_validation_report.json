@@ -1,0 +1,63 @@
+{
+  "total_patterns_found": 7,
+  "valid_superscripts": 0,
+  "potential_errors": 7,
+  "details": [
+    {
+      "base_text": "CVC Ownership (fully diluted) <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "CVC Ownership (fully diluted) <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Represents unvested preferred equity growth.",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Represents unvested preferred equity growth."
+    },
+    {
+      "base_text": "V (A)",
+      "superscripts": [
+        "A"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "V (A)"
+    },
+    {
+      "base_text": "V (B)",
+      "superscripts": [
+        "B"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "V (B)"
+    },
+    {
+      "base_text": "V (C)",
+      "superscripts": [
+        "C"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "V (C)"
+    },
+    {
+      "base_text": "V (D)",
+      "superscripts": [
+        "D"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "V (D)"
+    },
+    {
+      "base_text": "V (E)",
+      "superscripts": [
+        "E"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "V (E)"
+    }
+  ]
+}

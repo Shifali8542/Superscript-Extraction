@@ -1,0 +1,73 @@
+{
+  "total_patterns_found": 8,
+  "valid_superscripts": 0,
+  "potential_errors": 8,
+  "details": [
+    {
+      "base_text": "The following table presents the information with ...",
+      "superscripts": [
+        "a",
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "The following table presents the information with respect to purchases made by or on behalf of Ameri..."
+    },
+    {
+      "base_text": "(a) Total Number of Shares Purchased",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) Total Number of Shares Purchased"
+    },
+    {
+      "base_text": "(b) Average Price Paid Per Share",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) Average Price Paid Per Share"
+    },
+    {
+      "base_text": "(c) Total Number of Shares Purchased as part of Pu...",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(c) Total Number of Shares Purchased as part of Publicly Announced Plans or Programs \""
+    },
+    {
+      "base_text": "(d) Approximate Dollar Total Number of Shares Valu...",
+      "superscripts": [
+        "d",
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(d) Approximate Dollar Total Number of Shares Value of Shares that Purchased as part of May Yet Be P..."
+    },
+    {
+      "base_text": "Share repurchase program <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Share repurchase program <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Employee transactions <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Employee transactions <sup>(2)</sup>"
+    },
+    {
+      "base_text": "<sup></sup> On April 24, 2017, we announced that o...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "<sup>(1)</sup> On April 24, 2017, we announced that our Board of Directors authorized an additional ..."
+    }
+  ]
+}

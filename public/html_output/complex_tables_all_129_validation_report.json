@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "Weighted Average Exercise Price of Outstanding Opt...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Weighted Average Exercise Price of Outstanding Options, ($) (b)"
+    },
+    {
+      "base_text": "Options (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Options (a)"
+    }
+  ]
+}

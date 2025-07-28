@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "",
+      "superscripts": [
+        "596"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(596)"
+    },
+    {
+      "base_text": "Under this license agreement, the Company received...",
+      "superscripts": [
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Under this license agreement, the Company received milestone payments upon the achievement of certai..."
+    }
+  ]
+}

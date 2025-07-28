@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "(a) Transfers into Level 3 are the result of unobs...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) Transfers into Level 3 are the result of unobservable inputs utilized within valuation methodolo..."
+    },
+    {
+      "base_text": "(b) Purchases, sales, issuances and settlements, n...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) Purchases, sales, issuances and settlements, net, represent the activity that occurred during th..."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "total_patterns_found": 3,
+  "valid_superscripts": 0,
+  "potential_errors": 3,
+  "details": [
+    {
+      "base_text": "Number of Securities to be Issued Upon Exercise of...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Number of Securities to be Issued Upon Exercise of Outstanding Options, Warrants and Rights (a)"
+    },
+    {
+      "base_text": "Weighted-Average Exercise Price of Outstanding Opt...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Weighted-Average Exercise Price of Outstanding Options, Warrants and Rights (b)"
+    },
+    {
+      "base_text": "Number of Securities Remaining Available for Futur...",
+      "superscripts": [
+        "a",
+        "1",
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Number of Securities Remaining Available for Future Issuance under Equity Compensation Plans (Exclud..."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "total_patterns_found": 14,
+  "valid_superscripts": 0,
+  "potential_errors": 14,
+  "details": [
+    {
+      "base_text": "Measured at NAV (k)",
+      "superscripts": [
+        "k"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Measured at NAV (k)"
+    },
+    {
+      "base_text": "U.S. large cap (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "U.S. large cap (a)"
+    },
+    {
+      "base_text": "U.S. mid and small cap (b)",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "U.S. mid and small cap (b)"
+    },
+    {
+      "base_text": "International (c)",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "International (c)"
+    },
+    {
+      "base_text": "U.S. government securities (d)",
+      "superscripts": [
+        "d"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "U.S. government securities (d)"
+    },
+    {
+      "base_text": "Corporate debt instruments (e)",
+      "superscripts": [
+        "e"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Corporate debt instruments (e)"
+    },
+    {
+      "base_text": "Non-U.S. government securities (f)",
+      "superscripts": [
+        "f"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Non-U.S. government securities (f)"
+    },
+    {
+      "base_text": "Other (g)",
+      "superscripts": [
+        "g"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other (g)"
+    },
+    {
+      "base_text": "Absolute return funds (h)",
+      "superscripts": [
+        "h"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Absolute return funds (h)"
+    },
+    {
+      "base_text": "Commodities (i)",
+      "superscripts": [
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Commodities (i)"
+    },
+    {
+      "base_text": "Other (j)",
+      "superscripts": [
+        "j"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other (j)"
+    },
+    {
+      "base_text": "(a) A mix of index funds and actively managed equi...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) A mix of index funds and actively managed equity accounts that are benchmarked to various large ..."
+    },
+    {
+      "base_text": "(b) A mix of index funds and actively managed equi...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) A mix of index funds and actively managed equity accounts that are benchmarked to various mid an..."
+    },
+    {
+      "base_text": "(c) A mix of index funds and actively managed pool...",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(c) A mix of index funds and actively managed pooled investment funds that are benchmarked to variou..."
+    }
+  ]
+}

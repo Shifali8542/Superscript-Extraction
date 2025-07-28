@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "Total costs and expenses <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Total costs and expenses <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Total costs and expenses include $3.72 billion, $3...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Total costs and expenses include $3.72 billion, $3.22 billion, $2.97 billion, $1.84 billion, and..."
+    }
+  ]
+}

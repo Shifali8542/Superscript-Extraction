@@ -1,14 +1,11 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut, RotateCw } from 'lucide-react';
+import { ZoomIn, ZoomOut, RotateCw } from 'lucide-react';
+import DrawingOverlay, { DrawingShape } from './Drawing';
 import '../styles/react-pdf/TextLayer.css';
 import '../styles/react-pdf/AnnotationLayer.css';
 
-// import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-// import 'react-pdf/dist/esm/Page/TextLayer.css';
-
 pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
-
 
 interface PDFViewerProps {
   pdfFile: string;
@@ -16,6 +13,11 @@ interface PDFViewerProps {
   onPageChange: (page: number) => void;
   onScroll?: (scrollTop: number, scrollHeight: number) => void;
   syncScrollTop?: number;
+  onNumPagesChange?: (numPages: number) => void;
+  // Drawing props
+  isDrawingMode?: boolean;
+  drawings?: DrawingShape[];
+  onDrawingComplete?: (shape: DrawingShape) => void;
 }
 
 const PDFViewer: React.FC<PDFViewerProps> = ({
@@ -23,7 +25,11 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
   currentPage,
   onPageChange,
   onScroll,
-  syncScrollTop
+  syncScrollTop,
+  onNumPagesChange,
+  isDrawingMode = false,
+  drawings = [],
+  onDrawingComplete
 }) => {
   const [numPages, setNumPages] = useState<number>(0);
   const [pageNumber, setPageNumber] = useState<number>(currentPage);
@@ -46,29 +52,8 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
   const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
     setNumPages(numPages);
     setLoading(false);
-  };
-
-  const goToPrevPage = () => {
-    if (pageNumber > 1) {
-      const newPage = pageNumber - 1;
-      setPageNumber(newPage);
-      onPageChange(newPage);
-    }
-  };
-
-  const goToNextPage = () => {
-    if (pageNumber < numPages) {
-      const newPage = pageNumber + 1;
-      setPageNumber(newPage);
-      onPageChange(newPage);
-    }
-  };
-
-  const handlePageInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = parseInt(e.target.value);
-    if (value >= 1 && value <= numPages) {
-      setPageNumber(value);
-      onPageChange(value);
+    if (onNumPagesChange) {
+      onNumPagesChange(numPages);
     }
   };
 
@@ -78,7 +63,6 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
       const { scrollTop, scrollHeight } = containerRef.current;
       onScroll(scrollTop, scrollHeight);
 
-      // Reset user scrolling flag after a delay
       setTimeout(() => {
         isUserScrolling.current = false;
       }, 100);
@@ -91,71 +75,35 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
 
   return (
     <div className="h-full flex flex-col bg-gray-900">
-      {/* Toolbar */}
-      <div className="flex items-center justify-between p-4 bg-gray-800 border-b border-gray-700">
-        <div className="flex items-center space-x-2">
-          <button
-            onClick={goToPrevPage}
-            disabled={pageNumber <= 1}
-            className="p-2 rounded bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed transition-colors"
-          >
-            <ChevronLeft className="w-4 h-4 text-white" />
+      {/* Simplified Toolbar - Only Zoom and Rotate Controls */}
+      <div className="flex items-center justify-center py-6 px-2 bg-gray-800 border-b border-gray-700">
+        <div className="flex items-center justify-center gap-2 bg-gray-700 rounded px-3 py-2">
+          <button onClick={zoomOut} className="p-2 rounded bg-gray-600 hover:bg-gray-500 transition-colors">
+            <ZoomOut className="w-5 h-5 text-white" />
           </button>
 
-          <div className="flex items-center space-x-2">
-            <input
-              type="number"
-              value={pageNumber}
-              onChange={handlePageInputChange}
-              min={1}
-              max={numPages}
-              className="w-16 px-2 py-1 bg-gray-700 text-white rounded border border-gray-600 text-center"
-            />
-            <span className="text-gray-300">/ {numPages}</span>
-          </div>
-
-          <button
-            onClick={goToNextPage}
-            disabled={pageNumber >= numPages}
-            className="p-2 rounded bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed transition-colors"
-          >
-            <ChevronRight className="w-4 h-4 text-white" />
-          </button>
-        </div>
-
-        <div className="flex items-center space-x-2">
-          <button
-            onClick={zoomOut}
-            className="p-2 rounded bg-gray-700 hover:bg-gray-600 transition-colors"
-          >
-            <ZoomOut className="w-4 h-4 text-white" />
-          </button>
-
-          <span className="text-gray-300 min-w-[3rem] text-center">
+          <span className="text-gray-300 text-sm min-w-[3rem] text-center px-2">
             {Math.round(scale * 100)}%
           </span>
 
-          <button
-            onClick={zoomIn}
-            className="p-2 rounded bg-gray-700 hover:bg-gray-600 transition-colors"
-          >
-            <ZoomIn className="w-4 h-4 text-white" />
+          <button onClick={zoomIn} className="p-2 rounded bg-gray-600 hover:bg-gray-500 transition-colors">
+            <ZoomIn className="w-5 h-5 text-white" />
           </button>
 
-          <button
-            onClick={rotate}
-            className="p-2 rounded bg-gray-700 hover:bg-gray-600 transition-colors"
-          >
-            <RotateCw className="w-4 h-4 text-white" />
+          <button onClick={rotate} className="p-2 rounded bg-gray-600 hover:bg-gray-500 transition-colors">
+            <RotateCw className="w-5 h-5 text-white" />
           </button>
         </div>
       </div>
 
-      {/* PDF Container */}
+      {/* PDF Container with Drawing Overlay */}
       <div
         ref={containerRef}
-        className="flex-1 overflow-auto bg-gray-800 p-4"
+        className="flex-1 overflow-auto bg-gray-800 p-4 relative"
         onScroll={handleScroll}
+        style={{ 
+          pointerEvents: isDrawingMode ? 'none' : 'auto'
+        }}
       >
         {loading && (
           <div className="flex items-center justify-center h-full">
@@ -164,7 +112,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
           </div>
         )}
 
-        <div className="flex justify-center">
+        <div className="flex justify-center relative">
           <Document
             file={pdfFile}
             onLoadSuccess={onDocumentLoadSuccess}
@@ -176,11 +124,21 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
               scale={scale}
               rotate={rotation}
               className="border border-gray-600 bg-white"
-            // renderTextLayer={true}
-            // renderAnnotationLayer={true}
             />
           </Document>
         </div>
+
+        {/* Drawing Overlay */}
+        {onDrawingComplete && (
+          <DrawingOverlay
+            isDrawingMode={isDrawingMode}
+            currentPage={currentPage}
+            panel="pdf"
+            drawings={drawings}
+            onDrawingComplete={onDrawingComplete}
+            containerRef={containerRef}
+          />
+        )}
       </div>
     </div>
   );

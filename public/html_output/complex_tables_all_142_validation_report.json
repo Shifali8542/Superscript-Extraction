@@ -1,0 +1,39 @@
+{
+  "total_patterns_found": 4,
+  "valid_superscripts": 0,
+  "potential_errors": 4,
+  "details": [
+    {
+      "base_text": "Adjustments to Carrying Value",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Adjustments to Carrying Value (1)"
+    },
+    {
+      "base_text": "Current maturities of long-term debt <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Current maturities of long-term debt <sup>(2)</sup>"
+    },
+    {
+      "base_text": "Future interest payments and future payments-in-ki...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Future interest payments and future payments-in-kind (\"PIK\") are recorded on an undiscounted bas..."
+    },
+    {
+      "base_text": "Future interest payments on the 1.5 Lien Term Loan...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) Future interest payments on the 1.5 Lien Term Loan, Second Lien PIK Toggle Notes and Third Lien ..."
+    }
+  ]
+}

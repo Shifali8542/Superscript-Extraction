@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "",
+      "superscripts": [
+        "6"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(6)"
+    },
+    {
+      "base_text": "$",
+      "superscripts": [
+        "61"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "$ (61)"
+    }
+  ]
+}

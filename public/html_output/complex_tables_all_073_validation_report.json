@@ -1,0 +1,47 @@
+{
+  "total_patterns_found": 5,
+  "valid_superscripts": 0,
+  "potential_errors": 5,
+  "details": [
+    {
+      "base_text": "Assets of discontinued operations",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Assets of discontinued operations(3)"
+    },
+    {
+      "base_text": "Liabilities of discontinued operations",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Liabilities of discontinued operations(3)"
+    },
+    {
+      "base_text": "Continuing operations",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Continuing operations (4)"
+    },
+    {
+      "base_text": "The Company recognized an impairment charge on its...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) The Company recognized an impairment charge on its telecommunications licenses during the years ..."
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2)"
+    }
+  ]
+}

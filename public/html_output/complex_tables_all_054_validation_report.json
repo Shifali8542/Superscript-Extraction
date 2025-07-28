@@ -1,0 +1,31 @@
+{
+  "total_patterns_found": 3,
+  "valid_superscripts": 0,
+  "potential_errors": 3,
+  "details": [
+    {
+      "base_text": "2015",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "2015 (1)"
+    },
+    {
+      "base_text": "2014",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "2014 (1)"
+    },
+    {
+      "base_text": "$",
+      "superscripts": [
+        "173"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "$ (173)"
+    }
+  ]
+}

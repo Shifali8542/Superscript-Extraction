@@ -1,0 +1,40 @@
+{
+  "total_patterns_found": 4,
+  "valid_superscripts": 0,
+  "potential_errors": 4,
+  "details": [
+    {
+      "base_text": "The Company's accruals for legal matters that were...",
+      "superscripts": [
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "The Company's accruals for legal matters that were probable and estimable were not material at Decem..."
+    },
+    {
+      "base_text": "$ 1.32 <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "$ 1.32 <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Includes $0.85 impact associated with recording im...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Includes $0.85 impact associated with recording impact of Tax Reform Act."
+    },
+    {
+      "base_text": "Brown & Brown's business is divided into four repo...",
+      "superscripts": [
+        "1",
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Brown & Brown's business is divided into four reportable segments: (1) the Retail Segment, which pro..."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "total_patterns_found": 5,
+  "valid_superscripts": 0,
+  "potential_errors": 5,
+  "details": [
+    {
+      "base_text": "Charges to Other Accounts",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Charges to Other Accounts(1)"
+    },
+    {
+      "base_text": "$",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "$ (4)"
+    },
+    {
+      "base_text": "Represents foreign subsidiary financial statement ...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Represents foreign subsidiary financial statement translation impact charged to other comprehens..."
+    },
+    {
+      "base_text": "On September 1, 2015, the Company entered into a d...",
+      "superscripts": [
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "On September 1, 2015, the Company entered into a definitive agreement (the \"Merger Agreement\") with ..."
+    },
+    {
+      "base_text": "Following the announcement of the execution of the...",
+      "superscripts": [
+        "i",
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Following the announcement of the execution of the Merger Agreement, four putative stockholder class..."
+    }
+  ]
+}

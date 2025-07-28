@@ -1,0 +1,56 @@
+{
+  "total_patterns_found": 6,
+  "valid_superscripts": 0,
+  "potential_errors": 6,
+  "details": [
+    {
+      "base_text": "(b)",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b)"
+    },
+    {
+      "base_text": "Assumed exchange of LP Units for Class A Shares <s...",
+      "superscripts": [
+        "a",
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Assumed exchange of LP Units for Class A Shares <sup>(a)(b)</sup>"
+    },
+    {
+      "base_text": "Shares that are contingently issuable(e)",
+      "superscripts": [
+        "e"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Shares that are contingently issuable(e)"
+    },
+    {
+      "base_text": "Assumed conversion of Warrants issued <sup>(d)</su...",
+      "superscripts": [
+        "d"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Assumed conversion of Warrants issued <sup>(d)</sup>"
+    },
+    {
+      "base_text": "(a) The Company has outstanding Class J LP Units, ...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) The Company has outstanding Class J LP Units, which convert into Class E LP Units and ultimately..."
+    },
+    {
+      "base_text": "(b) The Company also has outstanding Class A and E...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) The Company also has outstanding Class A and E LP Units in Evercore LP, which give the holders t..."
+    }
+  ]
+}

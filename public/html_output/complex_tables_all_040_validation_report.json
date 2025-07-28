@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "$",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "$ (3)"
+    },
+    {
+      "base_text": "Consolidated Balance Sheets Data <sup></sup> :",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Consolidated Balance Sheets Data <sup>(1)</sup> :"
+    }
+  ]
+}

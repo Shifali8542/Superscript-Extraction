@@ -1,0 +1,15 @@
+{
+  "total_patterns_found": 1,
+  "valid_superscripts": 0,
+  "potential_errors": 1,
+  "details": [
+    {
+      "base_text": "1 In October 2016, the board of directors authoriz...",
+      "superscripts": [
+        "12"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "1 In October 2016, the board of directors authorized a share repurchase program that allows Federate..."
+    }
+  ]
+}

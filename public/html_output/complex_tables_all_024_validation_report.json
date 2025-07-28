@@ -1,0 +1,87 @@
+{
+  "total_patterns_found": 10,
+  "valid_superscripts": 0,
+  "potential_errors": 10,
+  "details": [
+    {
+      "base_text": "Fiscal Year Ended January <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Fiscal Year Ended January <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Total stores <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Total stores <sup>(2)</sup>"
+    },
+    {
+      "base_text": "Adj. EBITDA",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Adj. EBITDA (3)"
+    },
+    {
+      "base_text": "Adj. EBITA <sup></sup>",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Adj. EBITA <sup>(3)</sup>"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "44"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(44)"
+    },
+    {
+      "base_text": "Net Debt / Adj. EBITDA <sup></sup>",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Net Debt / Adj. EBITDA <sup>(4)</sup>"
+    },
+    {
+      "base_text": "For purposes of comparability, results for the FYE...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) For purposes of comparability, results for the FYE Jan. 2013 have been adjusted to exclude the i..."
+    },
+    {
+      "base_text": "Excludes five stores closed as part of the Company...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) Excludes five stores closed as part of the Company's restructuring program in 2011."
+    },
+    {
+      "base_text": "Adjusted EBITDA and Adjusted EBITA in all periods ...",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(3) Adjusted EBITDA and Adjusted EBITA in all periods are calculated pro forma for the incremental r..."
+    },
+    {
+      "base_text": "FYE January 2012 net debt / EBITDA multiple is bas...",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(4) FYE January 2012 net debt / EBITDA multiple is based upon EBITDA prior to the adjustment for the..."
+    }
+  ]
+}

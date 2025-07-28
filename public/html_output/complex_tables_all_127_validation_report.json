@@ -1,0 +1,15 @@
+{
+  "total_patterns_found": 1,
+  "valid_superscripts": 0,
+  "potential_errors": 1,
+  "details": [
+    {
+      "base_text": "Income taxes, net of refunds of $(1,014), $(4,689)...",
+      "superscripts": [
+        "865"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Income taxes, net of refunds of $(1,014), $(4,689) and $(865), respectively"
+    }
+  ]
+}

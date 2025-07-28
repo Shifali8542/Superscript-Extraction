@@ -1,0 +1,55 @@
+{
+  "total_patterns_found": 6,
+  "valid_superscripts": 0,
+  "potential_errors": 6,
+  "details": [
+    {
+      "base_text": "Investment funds, excluding liquidity funds <sup><...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Investment funds, excluding liquidity funds <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Market performance and other <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Market performance and other <sup>(2)</sup>"
+    },
+    {
+      "base_text": "Acquisitions (dispositions), net <sup></sup>",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Acquisitions (dispositions), net <sup>(3)</sup>"
+    },
+    {
+      "base_text": "Subscriptions and redemptions reflect the gross ac...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Subscriptions and redemptions reflect the gross activity in the funds and include assets transfe..."
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(3)"
+    },
+    {
+      "base_text": "Other is primarily the reclassification of $0.4 bi...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) Other is primarily the reclassification of $0.4 billion, $0.5 billion and $12.8 billion of clien..."
+    }
+  ]
+}

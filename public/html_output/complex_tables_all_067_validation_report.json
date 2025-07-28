@@ -1,0 +1,47 @@
+{
+  "total_patterns_found": 4,
+  "valid_superscripts": 0,
+  "potential_errors": 4,
+  "details": [
+    {
+      "base_text": "",
+      "superscripts": [
+        "520"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(520)"
+    },
+    {
+      "base_text": "All financial statements required to be filed here...",
+      "superscripts": [
+        "a",
+        "1",
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "All financial statements required to be filed hereunder, other than the quarterly financial data req..."
+    },
+    {
+      "base_text": "Our management has evaluated, with the participati...",
+      "superscripts": [
+        "e",
+        "e",
+        "a",
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Our management has evaluated, with the participation of our principal executive officer and principa..."
+    },
+    {
+      "base_text": "Our management is responsible for establishing and...",
+      "superscripts": [
+        "f",
+        "f",
+        "f",
+        "f"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Our management is responsible for establishing and maintaining adequate internal control over our fi..."
+    }
+  ]
+}

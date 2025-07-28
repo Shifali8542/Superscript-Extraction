@@ -1,11 +1,16 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { FileText, Search, HighlighterIcon } from 'lucide-react';
+import DrawingOverlay, { DrawingShape } from './Drawing';
 
 interface HTMLViewerProps {
   currentPage: number;
   onScroll?: (scrollTop: number, scrollHeight: number) => void;
   syncScrollTop?: number;
   onSuperscriptCount?: (count: number) => void;
+  // Drawing props
+  isDrawingMode?: boolean;
+  drawings?: DrawingShape[];
+  onDrawingComplete?: (shape: DrawingShape) => void;
 }
 
 interface SuperscriptInfo {
@@ -18,7 +23,10 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
   currentPage,
   onScroll,
   syncScrollTop,
-  onSuperscriptCount
+  onSuperscriptCount,
+  isDrawingMode = false,
+  drawings = [],
+  onDrawingComplete
 }) => {
   const [htmlContent, setHtmlContent] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
@@ -62,26 +70,25 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
     // Highlight <sup> tags with a very light, semi-transparent background
     highlightedContent = highlightedContent.replace(
       /<sup([^>]*)>/gi,
-      '<sup$1 style="background-color: rgba(255, 0, 0, 0.3); border: 2px solid rgba(255, 0, 0, 0.8); border-radius: 6px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); font-weight: bold;">'
+      '<sup$1 style="background-color: #ffffffaa; border: 2px solid #00cc00; border-radius: 10px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 6px #00cc00; font-weight: bold;">'
     );
 
     // Highlight elements with superscript class
     highlightedContent = highlightedContent.replace(
       /class="([^"]*\s)?superscript(\s[^"]*)?"([^>]*>)/gi,
-      'class="$1superscript$2" style="background-color: rgba(255, 0, 0, 0.3); border: 2px solid rgba(255, 0, 0, 0.8); border-radius: 6px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); font-weight: bold;"$3'
+      'class="$1superscript$2" style="background-color: #ffffffaa; border: 2px solid #00cc00; border-radius: 10px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 6px #00cc00; font-weight: bold;"$3'
     );
 
     // Highlight inline superscript styles
     highlightedContent = highlightedContent.replace(
       /style="([^"]*vertical-align:\s*super[^"]*)"([^>]*>)/gi,
-      'style="$1; background-color: rgba(255, 0, 0, 0.3); border: 2px solid rgba(255, 0, 0, 0.8); border-radius: 6px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); font-weight: bold;2'
+      'style="$1; background-color: #ffffffaa; border: 2px solid #00cc00; border-radius: 10px; padding: 3px 6px; margin: 0 3px; box-shadow: 0 0 6px #00cc00; font-weight: bold;2'
     );
 
     return highlightedContent;
   }, []);
 
   // Function to inject CSS to override any existing styles
-
   const injectOverrideCSS = useCallback((content: string): string => {
     const overrideCSS = `
     <style>
@@ -246,14 +253,17 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
         </div>
       </div>
 
-      {/* HTML Content Container */}
+      {/* HTML Content Container with Drawing Overlay */}
       <div
         ref={containerRef}
-        className="flex-1 overflow-auto bg-white"
+        className="flex-1 overflow-auto bg-gray-200 relative"
         onScroll={handleScroll}
         style={{
           width: '100%',
           height: '100%',
+          pointerEvents: isDrawingMode ? 'none' : 'auto',
+          padding: '2rem',
+         boxSizing: 'border-box',
         }}
       >
         {loading && (
@@ -266,7 +276,6 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
         {error && (
           <div className="flex flex-col items-center justify-center h-full bg-gray-100 text-center p-8">
             <FileText className="w-12 h-12 text-gray-400 mb-4" />
-            <h3 className="text-lg font-medium text-gray-700 mb-2">HTML File Not Found</h3>
             <p className="text-gray-500 mb-4">{error}</p>
             <p className="text-sm text-gray-400">
               Make sure the HTML files are located in the <code className="bg-gray-200 px-2 py-1 rounded">/public/html_output/</code> directory
@@ -281,11 +290,11 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
               width: '100%',
               height: '100%',
               minHeight: '100%',
-              padding: '40px',
-              margin: '0',
+              padding: '2rem 3rem',
+              margin: '0 auto',
               lineHeight: '1.7',
               fontSize: '25px',
-              fontFamily: 'Georgia, serif',
+              fontFamily: 'Arial',
               backgroundColor: 'white',
               color: 'black',
               textAlign: 'left',
@@ -296,6 +305,18 @@ const HTMLViewer: React.FC<HTMLViewerProps> = ({
               overflowWrap: 'break-word',
             }}
             dangerouslySetInnerHTML={{ __html: htmlContent }}
+          />
+        )}
+
+        {/* Drawing Overlay */}
+        {onDrawingComplete && (
+          <DrawingOverlay
+            isDrawingMode={isDrawingMode}
+            currentPage={currentPage}
+            panel="html"
+            drawings={drawings}
+            onDrawingComplete={onDrawingComplete}
+            containerRef={containerRef}
           />
         )}
       </div>

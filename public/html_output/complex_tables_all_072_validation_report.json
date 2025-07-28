@@ -1,0 +1,39 @@
+{
+  "total_patterns_found": 4,
+  "valid_superscripts": 0,
+  "potential_errors": 4,
+  "details": [
+    {
+      "base_text": "Operating expenses",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Operating expenses(1)\n"
+    },
+    {
+      "base_text": "Other, net",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other, net(2)"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "300"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(300)"
+    },
+    {
+      "base_text": "Gain on sale of discontinued operations, net of ta...",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Gain on sale of discontinued operations, net of tax(3)"
+    }
+  ]
+}

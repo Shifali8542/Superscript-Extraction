@@ -1,0 +1,31 @@
+{
+  "total_patterns_found": 3,
+  "valid_superscripts": 0,
+  "potential_errors": 3,
+  "details": [
+    {
+      "base_text": "Purchases, sales, issuances and settlements, net (...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Purchases, sales, issuances and settlements, net (b)"
+    },
+    {
+      "base_text": "Transfers into Level 3 (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Transfers into Level 3 (a)"
+    },
+    {
+      "base_text": "Transfers out of Level 3 (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Transfers out of Level 3 (a)"
+    }
+  ]
+}

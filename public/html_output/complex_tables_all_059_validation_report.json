@@ -1,0 +1,55 @@
+{
+  "total_patterns_found": 6,
+  "valid_superscripts": 0,
+  "potential_errors": 6,
+  "details": [
+    {
+      "base_text": "Gross accounts receivable",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Gross accounts receivable (1)"
+    },
+    {
+      "base_text": "Chargebacks",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Chargebacks (2)"
+    },
+    {
+      "base_text": "Rebates",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Rebates (2)"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "960"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(960)"
+    },
+    {
+      "base_text": "- The reduction in the Gross accounts receivable b...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) - The reduction in the Gross accounts receivable balance as of December 31, 2017 when compared t..."
+    },
+    {
+      "base_text": "- The reduction in the reserve for chargebacks and...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) - The reduction in the reserve for chargebacks and increase in the reserve for rebates as of Dec..."
+    }
+  ]
+}

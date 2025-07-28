@@ -1,0 +1,151 @@
+{
+  "total_patterns_found": 18,
+  "valid_superscripts": 0,
+  "potential_errors": 18,
+  "details": [
+    {
+      "base_text": "Total production (MBoe) (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Total production (MBoe) (a)"
+    },
+    {
+      "base_text": "%",
+      "superscripts": [
+        "19"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(19)%"
+    },
+    {
+      "base_text": "Sales volumes (MBoe) (b)",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Sales volumes (MBoe) (b)"
+    },
+    {
+      "base_text": "Average realized sales price (per Boe) (c)",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Average realized sales price (per Boe) (c)"
+    },
+    {
+      "base_text": "Other revenues, net (d)",
+      "superscripts": [
+        "d"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other revenues, net (d)"
+    },
+    {
+      "base_text": "Lease operating expenses including processing fees...",
+      "superscripts": [
+        "e"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Lease operating expenses including processing fees (e)"
+    },
+    {
+      "base_text": "Production and property taxes (f)",
+      "superscripts": [
+        "f"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Production and property taxes (f)"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "678"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(678)"
+    },
+    {
+      "base_text": "Lease operating expenses before taxes per Boe (g)",
+      "superscripts": [
+        "g"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Lease operating expenses before taxes per Boe (g)"
+    },
+    {
+      "base_text": "G&A excluding unit based compensation (h)",
+      "superscripts": [
+        "h"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "G&A excluding unit based compensation (h)"
+    },
+    {
+      "base_text": "(a) Natural gas is converted on the basis of six M...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) Natural gas is converted on the basis of six Mcf of gas per one Bbl of oil equivalent. This rati..."
+    },
+    {
+      "base_text": "(b) Includes 187 MBoe, 62 MBoe and zero MBoe of co...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) Includes 187 MBoe, 62 MBoe and zero MBoe of condensate purchased from third parties during 2016,..."
+    },
+    {
+      "base_text": "(c) Excludes the effect of commodity derivative se...",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(c) Excludes the effect of commodity derivative settlements."
+    },
+    {
+      "base_text": "(d) Includes salt water disposal revenues, gas pro...",
+      "superscripts": [
+        "d"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(d) Includes salt water disposal revenues, gas processing fees, earnings from equity investments and..."
+    },
+    {
+      "base_text": "(e) Includes district expenses, transportation exp...",
+      "superscripts": [
+        "e"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(e) Includes district expenses, transportation expenses and processing fees."
+    },
+    {
+      "base_text": "(f) Includes ad valorem and severance taxes.",
+      "superscripts": [
+        "f"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(f) Includes ad valorem and severance taxes."
+    },
+    {
+      "base_text": "(g) Excludes non-cash unit-based compensation expe...",
+      "superscripts": [
+        "g"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(g) Excludes non-cash unit-based compensation expense of $6.4 million, zero, and zero during 2016, 2..."
+    },
+    {
+      "base_text": "(h) Excludes non-cash unit-based compensation expe...",
+      "superscripts": [
+        "h"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(h) Excludes non-cash unit-based compensation expense of $17.8 million, $25.5 million, and $23.4 mil..."
+    }
+  ]
+}

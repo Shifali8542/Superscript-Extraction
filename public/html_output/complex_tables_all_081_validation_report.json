@@ -1,0 +1,15 @@
+{
+  "total_patterns_found": 1,
+  "valid_superscripts": 0,
+  "potential_errors": 1,
+  "details": [
+    {
+      "base_text": "",
+      "superscripts": [
+        "376"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(376)"
+    }
+  ]
+}

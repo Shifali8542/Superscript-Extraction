@@ -1,0 +1,31 @@
+{
+  "total_patterns_found": 3,
+  "valid_superscripts": 0,
+  "potential_errors": 3,
+  "details": [
+    {
+      "base_text": "Gas (MMcf)",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Gas (MMcf)(1)"
+    },
+    {
+      "base_text": "Production costs (per Boe)",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Production costs (per Boe)(2)"
+    },
+    {
+      "base_text": "Gas production excludes gas produced and used as f...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Gas production excludes gas produced and used as field fuel (primarily for compressors and artif..."
+    }
+  ]
+}

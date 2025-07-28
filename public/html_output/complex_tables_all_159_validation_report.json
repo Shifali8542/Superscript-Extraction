@@ -1,0 +1,119 @@
+{
+  "total_patterns_found": 14,
+  "valid_superscripts": 0,
+  "potential_errors": 14,
+  "details": [
+    {
+      "base_text": "High-speed Internet bundles (a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "High-speed Internet bundles (a)"
+    },
+    {
+      "base_text": "Voice only (b)",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Voice only (b)"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1)"
+    },
+    {
+      "base_text": "Small business (c)",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Small business (c)"
+    },
+    {
+      "base_text": "Switched access (d)",
+      "superscripts": [
+        "d"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Switched access (d)"
+    },
+    {
+      "base_text": "CAF Phase II funding and frozen federal USF (e)",
+      "superscripts": [
+        "e"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "CAF Phase II funding and frozen federal USF (e)"
+    },
+    {
+      "base_text": "State USF and ARM support (e)",
+      "superscripts": [
+        "e"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "State USF and ARM support (e)"
+    },
+    {
+      "base_text": "End user surcharges (e)",
+      "superscripts": [
+        "e"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "End user surcharges (e)"
+    },
+    {
+      "base_text": "Product sales (f)",
+      "superscripts": [
+        "f"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Product sales (f)"
+    },
+    {
+      "base_text": "Cost and expenses (g)",
+      "superscripts": [
+        "g"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Cost and expenses (g)"
+    },
+    {
+      "base_text": "(a) The decrease in high-speed Internet bundle rev...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) The decrease in high-speed Internet bundle revenues in 2017 was primarily due to the overall dec..."
+    },
+    {
+      "base_text": "(b) The decreases in voice-only revenues were prim...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) The decreases in voice-only revenues were primarily attributable to declines in households serve..."
+    },
+    {
+      "base_text": "(c) The decreases were primarily attributable to l...",
+      "superscripts": [
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(c) The decreases were primarily attributable to lower usage for voice-only and high-speed Internet ..."
+    },
+    {
+      "base_text": "(d) Switched access revenues include usage sensiti...",
+      "superscripts": [
+        "d"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(d) Switched access revenues include usage sensitive revenues from long-distance companies and other..."
+    }
+  ]
+}

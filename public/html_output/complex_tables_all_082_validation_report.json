@@ -1,0 +1,71 @@
+{
+  "total_patterns_found": 8,
+  "valid_superscripts": 0,
+  "potential_errors": 8,
+  "details": [
+    {
+      "base_text": "Operating revenues <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Operating revenues <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Net (loss) income attributable to Alaska Communica...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Net (loss) income attributable to Alaska Communications <sup>(1)</sup>"
+    },
+    {
+      "base_text": "(Loss) income per share - basic <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(Loss) income per share - basic <sup>(1)</sup>"
+    },
+    {
+      "base_text": "(Loss) income per share - diluted <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(Loss) income per share - diluted <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Total assets <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Total assets <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Long-term debt, including current portion <sup></s...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Long-term debt, including current portion <sup>(2)</sup>"
+    },
+    {
+      "base_text": "Results in 2015 and 2014 were affected by the form...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Results in 2015 and 2014 were affected by the formation of AWN in 2013 and the sale of Wireless ..."
+    },
+    {
+      "base_text": "Amounts do not reflect the classification of defer...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) Amounts do not reflect the classification of deferred debt issuance costs as a deduction from de..."
+    }
+  ]
+}

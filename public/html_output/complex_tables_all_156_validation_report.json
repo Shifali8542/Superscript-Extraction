@@ -1,0 +1,47 @@
+{
+  "total_patterns_found": 5,
+  "valid_superscripts": 0,
+  "potential_errors": 5,
+  "details": [
+    {
+      "base_text": "Loans and leases, net of unearned discount(a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Loans and leases, net of unearned discount(a)"
+    },
+    {
+      "base_text": "Investment securities(b)",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Investment securities(b)"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "932"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(932)"
+    },
+    {
+      "base_text": "(a) Includes nonaccrual loans.",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) Includes nonaccrual loans."
+    },
+    {
+      "base_text": "(b) Includes available-for-sale investment securit...",
+      "superscripts": [
+        "b"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(b) Includes available-for-sale investment securities at amortized cost."
+    }
+  ]
+}

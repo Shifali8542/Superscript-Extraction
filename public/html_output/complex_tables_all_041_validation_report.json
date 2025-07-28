@@ -1,0 +1,65 @@
+{
+  "total_patterns_found": 7,
+  "valid_superscripts": 0,
+  "potential_errors": 7,
+  "details": [
+    {
+      "base_text": "Percent of Revenues <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Percent of Revenues <sup>(1)</sup>"
+    },
+    {
+      "base_text": "%",
+      "superscripts": [
+        "5"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(5)%"
+    },
+    {
+      "base_text": "Other <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other <sup>(2)</sup>"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "929"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(929)"
+    },
+    {
+      "base_text": ") The percentage reported is based on revenues by ...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) ) The percentage reported is based on revenues by operating segment."
+    },
+    {
+      "base_text": "Represents unallocated items, not specifically ide...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) Represents unallocated items, not specifically identified to any particular business segment."
+    },
+    {
+      "base_text": "· Total revenues from Piccolo chemistry analyzers ...",
+      "superscripts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "· Total revenues from Piccolo chemistry analyzers decreased by 38%, or $3.9 million, during fiscal 2..."
+    }
+  ]
+}

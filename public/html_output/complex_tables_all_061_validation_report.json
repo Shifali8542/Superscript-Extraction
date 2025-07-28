@@ -1,0 +1,15 @@
+{
+  "total_patterns_found": 1,
+  "valid_superscripts": 0,
+  "potential_errors": 1,
+  "details": [
+    {
+      "base_text": "The Company's net operating loss (\"NOL\") carry-for...",
+      "superscripts": [
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "The Company's net operating loss (\"NOL\") carry-forwards as of December 31, 2017 consist of three com..."
+    }
+  ]
+}

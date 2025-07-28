@@ -1,0 +1,151 @@
+{
+  "total_patterns_found": 18,
+  "valid_superscripts": 0,
+  "potential_errors": 18,
+  "details": [
+    {
+      "base_text": "Plaza at Cherry Hill <sup></sup>",
+      "superscripts": [
+        "8"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Plaza at Cherry Hill <sup>(8)</sup>"
+    },
+    {
+      "base_text": "Westfield - One Lincoln Plaza <sup></sup>",
+      "superscripts": [
+        "8"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Westfield - One Lincoln Plaza <sup>(8)</sup>"
+    },
+    {
+      "base_text": "Plaza at Woodbridge <sup></sup>",
+      "superscripts": [
+        "8"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Plaza at Woodbridge <sup>(8)</sup>"
+    },
+    {
+      "base_text": "Hudson Commons <sup></sup>",
+      "superscripts": [
+        "10"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Hudson Commons <sup>(10)</sup>"
+    },
+    {
+      "base_text": "Watchung <sup></sup>",
+      "superscripts": [
+        "10"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Watchung <sup>(10)</sup>"
+    },
+    {
+      "base_text": "Bronx (1750-1780 Gun Hill Road) <sup></sup>",
+      "superscripts": [
+        "10"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Bronx (1750-1780 Gun Hill Road) <sup>(10)</sup>"
+    },
+    {
+      "base_text": "Cross-collateralized loan (variable) <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Cross-collateralized loan (variable) <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Englewood <sup></sup>",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Englewood <sup>(3)</sup>"
+    },
+    {
+      "base_text": "Montehiedra Town Center, Senior Loan <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Montehiedra Town Center, Senior Loan <sup>(2)</sup>"
+    },
+    {
+      "base_text": "Montehiedra Town Center, Junior Loan <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Montehiedra Town Center, Junior Loan <sup>(2)</sup>"
+    },
+    {
+      "base_text": "Shops at Bruckner <sup></sup>",
+      "superscripts": [
+        "6"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Shops at Bruckner <sup>(6)</sup>"
+    },
+    {
+      "base_text": "Hudson Mall <sup></sup>",
+      "superscripts": [
+        "7"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Hudson Mall <sup>(7)</sup>"
+    },
+    {
+      "base_text": "Yonkers Gateway Center <sup></sup>",
+      "superscripts": [
+        "9"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Yonkers Gateway Center <sup>(9)</sup>"
+    },
+    {
+      "base_text": "North Bergen (Tonnelle Ave) <sup></sup>",
+      "superscripts": [
+        "5"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "North Bergen (Tonnelle Ave) <sup>(5)</sup>"
+    },
+    {
+      "base_text": "Mt Kisco -Target <sup></sup>",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Mt Kisco -Target <sup>(4)</sup>"
+    },
+    {
+      "base_text": "Cross-collateralized loan (fixed) <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Cross-collateralized loan (fixed) <sup>(1)</sup>"
+    },
+    {
+      "base_text": "<sup></sup> The cross-collateralized mortgage loan...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "<sup>(1)</sup> The cross-collateralized mortgage loan was defeased and prepaid on November 15, 2017."
+    },
+    {
+      "base_text": "<sup></sup> As part of the planned redevelopment o...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "<sup>(2)</sup> As part of the planned redevelopment of Montehiedra Town Center, we committed to fund..."
+    }
+  ]
+}

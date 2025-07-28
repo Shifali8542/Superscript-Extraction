@@ -1,0 +1,31 @@
+{
+  "total_patterns_found": 3,
+  "valid_superscripts": 0,
+  "potential_errors": 3,
+  "details": [
+    {
+      "base_text": "Corporate and Other",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Corporate and Other (1)"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "246"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(246)"
+    },
+    {
+      "base_text": "Reconciling items refer to corporate overhead cost...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Reconciling items refer to corporate overhead costs and consolidating adjustments"
+    }
+  ]
+}

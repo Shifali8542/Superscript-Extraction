@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1)"
+    },
+    {
+      "base_text": "Confidenti002.",
+      "superscripts": [
+        "100"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(100)\nConfidenti002."
+    }
+  ]
+}

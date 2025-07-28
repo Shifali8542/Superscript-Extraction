@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "Dilution effect of share-based compensation, treas...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Dilution effect of share-based compensation, treasury method (1)"
+    },
+    {
+      "base_text": "Approximately 39,000 options to purchase our commo...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Approximately 39,000 options to purchase our common stock were excluded from this calculation be..."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "Operating: <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Operating: <sup>(1)</sup>"
+    },
+    {
+      "base_text": "The conversions to barrels of oil equivalent and c...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) The conversions to barrels of oil equivalent and cubic feet equivalent were determined using the..."
+    }
+  ]
+}

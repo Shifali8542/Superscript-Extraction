@@ -1,0 +1,15 @@
+{
+  "total_patterns_found": 1,
+  "valid_superscripts": 0,
+  "potential_errors": 1,
+  "details": [
+    {
+      "base_text": "Recruitments: strengthening of the management team...",
+      "superscripts": [
+        "i"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Recruitments: strengthening of the management team with (i) creation of talent management program wi..."
+    }
+  ]
+}

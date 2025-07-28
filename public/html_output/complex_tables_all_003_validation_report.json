@@ -1,0 +1,31 @@
+{
+  "total_patterns_found": 3,
+  "valid_superscripts": 0,
+  "potential_errors": 3,
+  "details": [
+    {
+      "base_text": "Book value at 31 December 2016 <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Book value at 31 December 2016 <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Book value at 31 December 2017 <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Book value at 31 December 2017 <sup>(1)</sup>"
+    },
+    {
+      "base_text": "the target companies are recognized in the financi...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) the target companies are recognized in the financial statements of the SPV at cost, eventually d..."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "total_patterns_found": 16,
+  "valid_superscripts": 0,
+  "potential_errors": 16,
+  "details": [
+    {
+      "base_text": "Tax (provision) benefit <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Tax (provision) benefit <sup>(1)</sup>"
+    },
+    {
+      "base_text": "",
+      "superscripts": [
+        "374"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(374)"
+    },
+    {
+      "base_text": "Net realized (loss) gain, net of tax <sup></sup>",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Net realized (loss) gain, net of tax <sup>(1)</sup>"
+    },
+    {
+      "base_text": "Net unrealized appreciation, net of tax <sup></sup...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Net unrealized appreciation, net of tax <sup>(1)</sup>"
+    },
+    {
+      "base_text": "$",
+      "superscripts": [
+        "187"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "$ (187)"
+    },
+    {
+      "base_text": "New investments <sup></sup>",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "New investments <sup>(2)</sup>"
+    },
+    {
+      "base_text": "Realizations <sup></sup>",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Realizations <sup>(3)</sup>"
+    },
+    {
+      "base_text": "Weighted average effective interest rate on debt i...",
+      "superscripts": [
+        "4"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Weighted average effective interest rate on debt investments at period end <sup>(4)</sup>"
+    },
+    {
+      "base_text": "NOI return on average shareholders' equity <sup></...",
+      "superscripts": [
+        "5"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "NOI return on average shareholders' equity <sup>(5)</sup>"
+    },
+    {
+      "base_text": "Net realized (loss) earnings return on average sha...",
+      "superscripts": [
+        "5"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Net realized (loss) earnings return on average shareholders' equity <sup>(5)</sup>"
+    },
+    {
+      "base_text": "Net (loss) earnings return on average shareholders...",
+      "superscripts": [
+        "5"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Net (loss) earnings return on average shareholders' equity <sup>(5)</sup>"
+    },
+    {
+      "base_text": "Assets under management <sup></sup>",
+      "superscripts": [
+        "6"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Assets under management <sup>(6)</sup>"
+    },
+    {
+      "base_text": "Earning assets under management <sup></sup>",
+      "superscripts": [
+        "7"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Earning assets under management <sup>(7)</sup>"
+    },
+    {
+      "base_text": "Beginning in 2011, we were no longer taxed as a RI...",
+      "superscripts": [
+        "1"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(1) Beginning in 2011, we were no longer taxed as a RIC under Subchapter M of the Code and instead b..."
+    },
+    {
+      "base_text": "New investments include amounts as of the investme...",
+      "superscripts": [
+        "2"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(2) New investments include amounts as of the investment dates that are committed."
+    },
+    {
+      "base_text": "Realizations represent cash proceeds received upon...",
+      "superscripts": [
+        "3"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(3) Realizations represent cash proceeds received upon the exit of investments including payment of ..."
+    }
+  ]
+}

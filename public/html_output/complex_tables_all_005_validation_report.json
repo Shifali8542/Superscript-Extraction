@@ -1,0 +1,32 @@
+{
+  "total_patterns_found": 3,
+  "valid_superscripts": 0,
+  "potential_errors": 3,
+  "details": [
+    {
+      "base_text": "OPENING BALANCE OF FUND (units issued x issue pric...",
+      "superscripts": [
+        "A"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "OPENING BALANCE OF FUND (units issued x issue price) (A)"
+    },
+    {
+      "base_text": "TOTAL PAYMENTS INTO FUND (B)",
+      "superscripts": [
+        "B"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "TOTAL PAYMENTS INTO FUND (B)"
+    },
+    {
+      "base_text": "TOTAL CALLABLE CAPITAL (A)-(B) \"recallable\" amount...",
+      "superscripts": [
+        "A",
+        "B"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "TOTAL CALLABLE CAPITAL (A)-(B) \"recallable\" amount included"
+    }
+  ]
+}

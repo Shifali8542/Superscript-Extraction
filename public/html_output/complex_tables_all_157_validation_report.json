@@ -1,0 +1,23 @@
+{
+  "total_patterns_found": 2,
+  "valid_superscripts": 0,
+  "potential_errors": 2,
+  "details": [
+    {
+      "base_text": "Other(a)",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "Other(a)"
+    },
+    {
+      "base_text": "(a) Includes Delaware, Virginia, West Virginia and...",
+      "superscripts": [
+        "a"
+      ],
+      "status": "POTENTIAL_ERROR",
+      "original_content": "(a) Includes Delaware, Virginia, West Virginia and the District of Columbia."
+    }
+  ]
+}
